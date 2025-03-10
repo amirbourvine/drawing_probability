@@ -26,58 +26,20 @@ Documentation could be found in the beginning of each scrtip.
 
 
 
-End with an example of getting some data out of the system or using it for a little demo
+### Details about the Scripts
 
-## Running the tests
+* sampling_script.py: This script is the base experiment setup. 
+You can use:
+    plot_distribution to plot the histogram
+    plot_multiple_distributions to plot the progression of the normal curve
+    plot_array_for_index to see the progression of stds/mus
 
-Explain how to run the automated tests for this system
+* exp_vs_analytical.py: This script is analytical vs experiments.
+Plots the analytically calculated std values with the stds observed in the experiment.
 
-### Break down into end to end tests
+* slope_for_ration.py: This script is is for plotting a graph of the slope of the linear growth of the std to the M/n ratio.
 
-Explain what these tests test and why
+* curve_fitting.py: This script is fitting various functions to the slope for ratio curve.
+first run slope_for_ration.py to create slope_to_ratio.npz, that this script uses.
 
-```
-Give an example
-```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
