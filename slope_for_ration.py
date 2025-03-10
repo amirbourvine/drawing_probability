@@ -9,8 +9,7 @@ from sampling_script import create_graph,sample_strands
 
 # assumption: sampling with replacement!
 """
-This script is analytical vs experiments.
-Plots the analytically calculated std values with the stds observed in the experiment.
+This script is is for plotting a graph of the slope to the M/n ratio.
 """
 
 
