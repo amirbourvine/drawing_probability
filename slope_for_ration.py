@@ -9,7 +9,7 @@ from sampling_script import create_graph,sample_strands
 
 # assumption: sampling with replacement!
 """
-This script is is for plotting a graph of the slope to the M/n ratio.
+This script is is for plotting a graph of the slope of the linear growth of the std to the M/n ratio.
 """
 
 
