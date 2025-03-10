@@ -6,39 +6,25 @@ The plot that describes the number of strands (y axis) with a given number of co
 Then, another sample is taken according to the new distribution and this process repeats several time. 
 The goal is to analyze how this plot changes with the number of iterations.
 
-## Getting Started
-
-Clone the git to your local machine:
-  git clone https://github.com/amirbourvine/drawing_probability.git
-
-Install the requirements:
-  pip install -r requirements.txt
-
-Run any of the scripts. Documentation could be found in the beginning of each scrtip.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Follow the following steps in order to run our project:
 
-Say what the step will be
+Clone the git to your local machine:
+```
+git clone https://github.com/amirbourvine/drawing_probability.git
+```
 
+Install the requirements:
 ```
-Give the example
+pip install -r requirements.txt
 ```
 
-And repeat
+Run any of the scripts. 
+Documentation could be found in the beginning of each scrtip.
 
-```
-until finished
-```
+
 
 End with an example of getting some data out of the system or using it for a little demo
 
