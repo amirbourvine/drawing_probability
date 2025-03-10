@@ -6,12 +6,13 @@ from tqdm import tqdm
 from scipy import stats
 
 # assumption: sampling with replacement!
-
-
-def initialize_strands(n):
-    """Initialize the number of copies for each strand to be constant- uniform distribution."""
-    strand_counts = np.ones(n)
-    return strand_counts
+"""
+This script is the base experiment setup. 
+You can use:
+    plot_distribution to plot the histogram
+    plot_multiple_distributions to plot the progression of the normal curve
+    plot_array_for_index to see the progression of stds/mus
+"""
 
 def create_graph(new_counts):
     """
@@ -81,6 +82,9 @@ def plot_distribution(x,y, iteration):
 
 
 def plot_multiple_distributions(mus, stds):
+    """
+    inputs are mus and stds and plots in the same plot all of the normal distributions
+    """
     plt.figure(figsize=(16, 10))
     x = np.linspace(min(mus) - 3*max(stds), max(mus) + 3*max(stds), 1000)
     
@@ -104,7 +108,7 @@ def plot_multiple_distributions(mus, stds):
 def plot_array_for_index(arr):
     """
     Plots the given array where the x-axis represents the index and the y-axis represents the array values.
-    
+
     :param arr: List or NumPy array of numerical values to plot.
     """
 
@@ -155,22 +159,6 @@ def simulate_sampling(n, M, iterations):
     # plot_multiple_distributions(mus, stds)
 
     # plot_array_for_index(stds)
-
-    # x,y = create_graph(strand_counts)
-    # plot_distribution(x,y, iterations)
-
-    
-    # for i in tqdm(range(200)):
-    #     probabs = strand_counts / ((i+1)*M)
-            
-    #     strand_counts = sample_strands(strand_counts, probabs, M)
-    #     if i == 30:
-    #         x,y = create_graph(strand_counts)
-    #         plot_distribution(x,y, 30)
-
-    
-    # x,y = create_graph(strand_counts)
-    # plot_distribution(x,y, 200)
     
     
 if __name__ == "__main__":

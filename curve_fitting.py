@@ -2,6 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
+"""
+This script is fitting various functions to the slope for ratio curve.
+first run slope_for_ration.py to create slope_to_ratio.npz, that this script uses.
+"""
+
 def sqrt_func(x, a, b):
     return a * np.sqrt(x) + b
 
