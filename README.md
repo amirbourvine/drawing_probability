@@ -28,11 +28,7 @@ Documentation could be found in the beginning of each scrtip.
 
 ### Details about the Scripts
 
-* sampling_script.py: This script is the base experiment setup. 
-You can use:
-    plot_distribution to plot the histogram
-    plot_multiple_distributions to plot the progression of the normal curve
-    plot_array_for_index to see the progression of stds/mus
+* sampling_script.py: This script is the base experiment setup. Full details could be found in the top of the script.
 
 * exp_vs_analytical.py: This script is analytical vs experiments.
 Plots the analytically calculated std values with the stds observed in the experiment.
